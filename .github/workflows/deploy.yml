@@ -22,10 +22,6 @@ jobs:
              username: ${{ secrets.USERNAME }}
              key: ${{ secrets.SSHKEY }}
              port: ${{ secrets.PORT }}
-             script: |
-               echo "Deployment completed"
-               cd /home/farm
-               sudo systemctl restart farm
-               sudo systemctl status farm.service
+             script: ls
              
          
